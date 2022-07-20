@@ -17,9 +17,11 @@ html {
 body {
   color: #545149;
   background-color: #f4f1ec;
+  font-family: 'Source sans Pro', 'sans-serif', 'Bungee';
   font-size: 24px;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
