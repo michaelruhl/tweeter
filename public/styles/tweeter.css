@@ -1,11 +1,16 @@
-nav {
+/* nav {
 
   height: 120px;
   width: 100vw;
   background-color: #4056A1;
   color: #fff;
   padding: 1.5em;
-  position: static;
+  position: fixed;
+  top:0;
+}
+
+.blocker{
+  height:120px;
 }
 
 nav span {
@@ -39,12 +44,6 @@ nav div {
   justify-content: space-between;
   align-items: center;
   padding: 2em;
-
-  /* width: 80%;
-  margin-left: 6.5em;
-  height: 10em;
-  padding: 2em;
-  padding-bottom: 10em; */
 }
 
 .avatar-name {
@@ -75,8 +74,6 @@ article {
   padding-right: 2em;
   margin-left: 2em;
   margin-right: 2em;
-
-
 }
 
 .icons{
@@ -101,4 +98,4 @@ article {
 }
 
 
-
+ */
