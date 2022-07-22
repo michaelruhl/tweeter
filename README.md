@@ -14,13 +14,13 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Dependencies
 
--"body-parser": "^1.15.2",
--"chance": "^1.0.2",
--"express": "^4.13.4",
--"md5": "^2.1.0",
--"timeago.js": "^4.0.2"
+#"body-parser": "^1.15.2",
+#"chance": "^1.0.2",
+#"express": "^4.13.4",
+#"md5": "^2.1.0",
+#"timeago.js": "^4.0.2"
 
 ## Final Product
 
-!["screenshot description"]()
-!["screenshot description"]()
+!["screenshot description"](https://github.com/michaelruhl/tweeter/blob/master/docs/desktop-view.png)
+!["screenshot description"](https://github.com/michaelruhl/tweeter/blob/master/docs/mobile-view.png)
