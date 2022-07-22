@@ -1,4 +1,4 @@
-button {
+/* button {
   font-family: "Bungee", "sans-serif";
   background-color: #4056a1;
   color: #fff;
@@ -46,3 +46,19 @@ textarea {
 .red{
   color: red;
 }
+
+#error-msg{
+  display: flex;
+  font-family: 'Arial Narrow Bold';
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 400px;
+  border: solid;
+  border-color: red;
+  color: red;
+}
+.new-tweet{
+  display: flex;
+  justify-content: center;
+} */
