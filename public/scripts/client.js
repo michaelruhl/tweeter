@@ -1,4 +1,6 @@
-const renderTweets = function (tweets) {
+// function that renders the tweets and prepends them to html
+
+const renderTweets = function (tweets) {      
   const $tweetContainer = $("#tweets-container");
   for (let tweet of tweets) {
     const $tweetArr = createTweetElements(tweet);
@@ -6,12 +8,14 @@ const renderTweets = function (tweets) {
   }
 };
 
+// escape function for subverting XSS attempts 
 const escape = function (str) {
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
 };
 
+// function for creating tweet html structure
 const createTweetElements = function (tweetData) {
   const divElement = `<article id="article-box">
   <header>
@@ -46,22 +50,26 @@ const createTweetElements = function (tweetData) {
   return divElement;
 };
 
+// document ready jQuery & ajax 
 $(document).ready(function () {
   const loadTweets = function () {
     $.ajax("/tweets/", { method: "GET" }).then(function (tweet) {
       renderTweets(tweet);
+// ajax GETing prepended post 
     });
   };
+
   loadTweets();
-
-  const formSubmit = $("#form-submit");
-  formSubmit.submit((event) => {
-    event.preventDefault();
-    console.log("button pressed");
-    const tweetInput = $("#tweet-text");
-
-    if (tweetInput.val().length > 140 || tweetInput.val().length <= 0) {
-      const $newTweet = $(".new-tweet");
+// form submitting to tweets server
+const formSubmit = $("#form-submit");
+formSubmit.submit((event) => {
+  event.preventDefault();
+  console.log("button pressed");
+  const tweetInput = $("#tweet-text");
+  
+  if (tweetInput.val().length > 140 || tweetInput.val().length <= 0) {
+    const $newTweet = $(".new-tweet");
+// prepend error html
       const $errorMsg = '<div id="error-msg">INVALID CHARACTER AMOUNT</div>';
       $newTweet.prepend($errorMsg);
     } else {
@@ -70,6 +78,7 @@ $(document).ready(function () {
         const $tweetArr = createTweetElements(res);
         $tweetContainer.prepend($tweetArr);
       });
+// empty the text area
       tweetInput.val("");
     }
   });
