@@ -16,5 +16,10 @@ $(document).ready(function () {
       counter.removeClass("red");
     }
     counter.val(counterCount);
+
+    const formSubmit = $("#form-submit");
+  formSubmit.submit(() => {
+    counter.val(140);
+  })
   });
 });
