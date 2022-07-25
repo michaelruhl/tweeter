@@ -38,13 +38,13 @@
 
     color: #fff;
     padding: 1.5em;
-    position: fixed;
+    position: static;
     top: 0;
   }
 
-  .blocker {
-    height: 250px;
-  }
+  /* .blocker {
+    height: 60px;
+  } */
 
   nav span {
     font-family: "Bungee", "sans-serif";
@@ -95,7 +95,7 @@
     background-image: url("https://www.transparenttextures.com/patterns/blu-stripes.png");
     width: 100vw;
     top: 60px;
-    position: fixed;
+    position: static;
     height: 30%;
   }
 
@@ -424,6 +424,8 @@
     border: solid;
     border-color: red;
     color: red;
+    margin-left: 10em;
+    margin-bottom: 1em;
   }
 
   /* /////////////////////////////////////////////////////////////////////// */
